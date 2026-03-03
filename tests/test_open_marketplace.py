@@ -4,7 +4,7 @@ import pytest
 from pages.models_page import ModelsPage
 from tools.routes import AppRoute
 
-
+@pytest.mark.regression
 class TestOpenMarketplace:
     @allure.title("Successful page open")
     def test_open_marketplace_page(
