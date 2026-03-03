@@ -28,11 +28,8 @@ class HeaderNavbar(BaseComponent):
         Проверяет, что navbar отображается корректно:
         - Название приложения видно и соответствует 'UI Course'
         - Приветствие содержит имя пользователя
-
-        :param username: Имя пользователя, которое ожидается в приветствии
         """
         self.logo.check_visible()
-#        self.app_title.check_have_text('UI Course')
 
         self.enter_marketplace_button.check_visible()
         self.enter_marketplace_button.check_have_text(f'Enter Marketplace')

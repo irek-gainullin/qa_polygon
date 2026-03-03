@@ -11,4 +11,4 @@ class AppRoute(str, Enum):
     - проверка текущего URL;
     - редиректы.
     """
-    MODELS = "./marketplace/models"  # Главная страница
+    MODELS = "/marketplace/models"  # Главная страница

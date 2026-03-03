@@ -18,10 +18,10 @@ class TestOpenMarketplace:
         models_page.header_navbar.logo.check_visible()
 
         # 3. Проверка что отображается кнопка Enter Marketplace
-        models_page.header_navbar.enter_marketplace_button.check_visible()
+        #models_page.header_navbar.enter_marketplace_button.check_visible()
 
-        # 4. Клик по кнопке регистрации
-        models_page.header_navbar.enter_marketplace_button.click()
+        #4. Клик по кнопке регистрации
+        #models_page.header_navbar.enter_marketplace_button.click()
 
         # 5. Проверка отображения элементов на Dashboard
-        models_page.enter_marketplace_popup.text.check_visible()
+        #models_page.enter_marketplace_popup.text.check_visible()

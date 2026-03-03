@@ -53,7 +53,7 @@ class ModelsPage(BasePage):
 
         self.logo.check_visible()
         self.logo.click()
-        self.check_current_url(re.compile("marketplace/models"))
+        self.check_current_url(re.compile(".*/marketplace/models"))
 
     def check_popup_text_is_visible(self):
         self.enter_marketplace_popup.text.check_visible()
