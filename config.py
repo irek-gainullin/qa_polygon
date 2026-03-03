@@ -7,6 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     """
     Конфигурация UI автотестов. Все значения загружаются из .env файла или переменных окружения.
+    совсем ничего не значащий комит, для теста gh actions
 
     :param app_url: URL тестируемого приложения.
     :param headless: Флаг запуска браузера в headless-режиме.
