@@ -1,4 +1,5 @@
 import uuid
+from typing import Any, Generator
 
 import allure
 import pytest
@@ -9,7 +10,7 @@ from pages.models_page import ModelsPage
 
 
 @pytest.fixture
-def chromium_page(playwright: Playwright, settings: Settings) -> Page:
+def chromium_page(playwright: Playwright, settings: Settings) -> Generator[Page, Any, None]:
     """
     Фикстура для запуска браузера Chromium и создания новой страницы.
 
@@ -45,23 +46,23 @@ def chromium_page(playwright: Playwright, settings: Settings) -> Page:
     allure.attach.file(page.video.path(), name='video', attachment_type=allure.attachment_type.WEBM)
 
 
+# @pytest.fixture
+# def dashboard_page(chromium_page: Page) -> DashboardPage:
+#     """
+#     Фикстура для инициализации страницы дашборда.
+#
+#     :param chromium_page: Страница браузера Chromium, созданная через фикстуру.
+#     :return: Объект `DashboardPage` для использования в тестах.
+#     """
+#     return DashboardPage(page=chromium_page)
+
+
 @pytest.fixture
-def dashboard_page(chromium_page: Page) -> DashboardPage:
-    """
-    Фикстура для инициализации страницы дашборда.
-
-    :param chromium_page: Страница браузера Chromium, созданная через фикстуру.
-    :return: Объект `DashboardPage` для использования в тестах.
-    """
-    return DashboardPage(page=chromium_page)
-
-
-@pytest.fixture
-def registration_page(chromium_page: Page) -> RegistrationPage:
+def models_page(chromium_page: Page) -> ModelsPage:
     """
     Фикстура для инициализации страницы регистрации.
 
     :param chromium_page: Страница браузера Chromium, созданная через фикстуру.
     :return: Объект `RegistrationPage` для использования в тестах.
     """
-    return RegistrationPage(page=chromium_page)
+    return ModelsPage(page=chromium_page)
