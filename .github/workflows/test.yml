@@ -19,12 +19,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5  # Устанавливаем Python
         with:
-          python-version: '3.14'  # Указываем версию Python
+          python-version: '3.12'  # Указываем версию Python
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip  # Обновляем pip
           pip install -r requirements.txt  # Устанавливаем зависимости проекта
+          pip install allure-pytest pytest-xdist #пробую явно установить эти зависимости
           playwright install --with-deps  # Устанавливаем Playwright и его зависимости
 
       - name: Run UI tests with pytest and generate Allure results
