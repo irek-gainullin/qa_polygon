@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","30014","Successful page open","tests","Tue Mar 03 23:21:29 UTC 2026","broken","Tue Mar 03 23:22:00 UTC 2026","TestOpenMarketplace","test_open_marketplace","",""
+"","30012","Successful page open","tests","Wed Mar 04 22:03:14 UTC 2026","broken","Wed Mar 04 22:03:44 UTC 2026","TestOpenMarketplace","test_open_marketplace","",""
