@@ -3,7 +3,7 @@ from typing import Any, Generator
 
 import allure
 import pytest
-from playwright.sync_api import Playwright, Page, expect
+from patchright.sync_api import Playwright, Page, expect
 
 from config import Settings
 from pages.models_page import ModelsPage
