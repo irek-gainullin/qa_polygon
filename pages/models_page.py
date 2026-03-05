@@ -39,7 +39,7 @@ class ModelsPage(BasePage):
                                           "Enter Marketplace Button")  # Кнопка отправки формы
     def click_enter_marketplace_button(self):
         """
-        Клик на кнопку "Зарегистрироваться" и проверка перехода на страницу панели управления.
+        Клик на кнопку "Enter Marketplace" и проверка открытия попапа.
 
         :raises AssertionError: Если URL не соответствует ожидаемому
         """
