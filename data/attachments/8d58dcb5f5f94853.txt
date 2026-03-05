@@ -1,3 +1,0 @@
-INFO     BASE_PAGE:base_page.py:36 Opening the url "AppRoute.MODELS"
-INFO     BASE_ELEMENT:base_element.py:45 Getting locator with "data-testid=logo" at index "0"
-INFO     BASE_ELEMENT:base_element.py:73 Checking that image "Marketplace logo" is visible
