@@ -1,1 +1,0 @@
-INFO     BASE_PAGE:base_page.py:36 Opening the url "AppRoute.MODELS"
