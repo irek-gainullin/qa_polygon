@@ -40,6 +40,7 @@ def chromium_page(playwright: Playwright, settings: Settings) -> Generator[Page,
 
     tracing_file = settings.tracing_dir.joinpath(f'{uuid.uuid4()}.zip')
     context.tracing.stop(path=tracing_file)
+    context.close()
     browser.close()
 
     allure.attach.file(tracing_file, name='trace', extension='zip')
